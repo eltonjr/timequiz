@@ -10,7 +10,7 @@ RUN GO111MODULE=on go get -insecure ./...
 
 # ---- Build ----
 FROM dependencies as build
-GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -v -a -installsuffix cgo -o server
+GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -v -a -installsuffix cgo -o timequiz-server
 
 # ---- Release ----
 FROM alpine:3.10 AS release

@@ -3,8 +3,8 @@ export
 
 .DEFAULT_GOAL := help
 
-IMAGE_NAME := testquiz-server
-CONTAINER_NAME := testquiz-server
+IMAGE_NAME := timequiz-server
+CONTAINER_NAME := timequiz-server
 
 .PHONY: help
 help:  ## Display this help

@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+
+  web:
+    build: ./web
+    container_name: timequiz-web
+    ports:
+      - "9090:9090"
+    environment:
+      BACKEND_SERVICE_HOST: timequiz-server
+      BACKEND_SERVICE_PORT: 9000
+
+  server:
+    build: ./server
+    container_name: timequiz-server
+    ports:
+      - "9000:9000"
+    env_file:
+      - server/server.env
