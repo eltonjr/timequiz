@@ -1,11 +1,12 @@
 <template>
   <div>
-    <!-- here goes the scores list -->
+    <scoreboard-item v-for="(item, i) in scores" :key="i" :item="item" :index="i+1"></scoreboard-item>
   </div>
 </template>
 
 <script>
-// import service from '@/components/scores'
+import service from '@/components/scores'
+import ScoreboardItem from '@/components/ScoreboardItem'
 
 export default {
   name: 'ScoreboardList',
@@ -14,8 +15,18 @@ export default {
   data () {
     return {
       pending: 0,
-      movies: []
+      scores: []
     }
+  },
+  mounted () {
+    this.pending++
+    service.getScores().then(data => {
+      this.pending--
+      this.scores = data
+    }).catch(failure => {
+      this.pending--
+      console.log('failed getting scores', failure)
+    })
   },
   computed: {
   },
@@ -24,6 +35,7 @@ export default {
   watch: {
   },
   components: {
+    ScoreboardItem
   }
 }
 </script>

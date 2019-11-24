@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import ScoreboardList from '@/components/header-bar/ScoreboardList'
+import ScoreboardList from '@/components/ScoreboardList'
 
 export default {
   name: 'App',

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- here goes the scores list -->
+    {{index}} / {{item.name}} / {{item.score}} / {{item.time}}
   </div>
 </template>
 
@@ -9,12 +9,12 @@
 
 export default {
   name: 'ScoreboardItem',
-  props: {
-  },
+  props: [
+    'item',
+    'index'
+  ],
   data () {
     return {
-      pending: 0,
-      movies: []
     }
   },
   computed: {
