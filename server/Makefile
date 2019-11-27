@@ -20,7 +20,7 @@ build: ## Compiles the system's binary
 
 .PHONY: run
 run: ## Run the system locally
-	go run main.go
+	go run .
 
 .PHONY: test
 test: ## Run unit tests
