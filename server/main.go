@@ -9,7 +9,6 @@ import (
 )
 
 func main() {
-	InitEnv()
 
 	r := httprouter.New()
 

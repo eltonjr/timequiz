@@ -20,7 +20,7 @@ type vars struct {
 // and crashes if some is missing
 var Env vars
 
-func InitEnv() {
+func init() {
 	Env.Server.Address = os.Getenv("SERVER_ADDRESS")
 	if Env.Server.Address == "" {
 		log.Fatal("missing SERVER_ADDRESS")
