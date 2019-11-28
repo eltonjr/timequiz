@@ -4,7 +4,7 @@
     <div class="container">
       <table class="table is-fullwidth is-striped">
         <thead>
-          <th>#</th>
+          <th>Posição</th>
           <th>Nome</th>
           <th>Pontuação</th>
           <th>Tempo</th>
@@ -18,8 +18,6 @@
           </tr>
         </tbody>
       </table>
-
-      <button @click="goToForm()" class="button is-primary">Começar quiz</button>
     </div>
   </section>
 
@@ -51,11 +49,6 @@ export default {
     })
   },
   computed: {
-  },
-  methods: {
-    goToForm () {
-      this.$router.push({ name: 'form' })
-    }
   },
   watch: {
   },

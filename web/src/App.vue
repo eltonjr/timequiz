@@ -1,24 +1,13 @@
 <template>
   <div>
-    <section class="hero is-primary">
-      <div class="hero-body">
-        <div class="container">
-          <img class="neoway-logo" src="static/assets/neoway.svg">
-          <h1 class="title">
-            Neoway quiz
-          </h1>
-          <!-- <h2 class="subtitle">
-            Primary subtitle
-          </h2> -->
-        </div>
-      </div>
-    </section>
+    <page-header></page-header>
     <router-view/>
   </div>
   <!-- here goes the score + quiz -->
 </template>
 
 <script>
+import PageHeader from '@/components/header/Header'
 
 export default {
   name: 'App',
@@ -31,6 +20,7 @@ export default {
   methods: {
   },
   components: {
+    PageHeader
   }
 }
 </script>

@@ -1,0 +1,119 @@
+// Primary Colors
+$neo-red:             #d3312f;
+$neo-turquoise:       #3cb5c6;
+$neo-orange-light:    #ffa52b;
+$neo-blue:            #2474a9;
+$neo-blue-light:      #39a9db;
+$neo-blue-dark:       #306297;
+$neo-orange:          #f8572b;
+$neo-green:           #96ba14;
+
+$primary: $neo-blue-dark;
+
+$color-gray-dark: #777;
+$color-gray-dark-2: #999;
+$color-white: #fff;
+$color-black: #000;
+
+$color-error:#D8000C;
+$color-success: #4F8A10;
+
+
+// Animations
+@keyframes moveInLeft{
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    opacity: 0;
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight{
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    opacity: 0;
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInUp{
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+ .btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 1.6rem;
+    cursor: pointer;
+    
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba($color-black, .2);
+    }
+
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+    }
+
+    &--white {
+      background-color: $color-white;
+      color: $color-gray-dark;
+    }
+
+    .bt:after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 10rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all .4s;
+    }
+
+    &--alert {
+        background-color: transparent;
+        border: transparent;
+        margin-left: 6rem;
+        color: $color-gray-dark;
+        &:hover {
+            transform: translateY(-3px);
+            border-color: $color-gray-dark;
+            box-shadow: 0 1rem 2rem rgba($color-black, .2);
+        }
+    }
+ }
