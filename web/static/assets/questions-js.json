@@ -1,0 +1,881 @@
+[
+  {
+    "id": "JS001",
+    "question": "Qual dessas opções não é permitida em um arquivo JavaScript em modo 'use strict'?",
+    "options": [
+      {
+        "answer": "Atribuir valor para uma variável não declarada (global)",
+        "correct": true
+      },
+      {
+        "answer": "Atribuir o valor `undefined` a uma variável"
+      },
+      {
+        "answer": "Chamar uma função com menos argumentos do que o número de parâmetros declarados"
+      },
+      {
+        "answer": "Declarar variáveis usando `var`"
+      }
+    ],
+    "tags": [
+      "js",
+      "medium"
+    ]
+  },
+  {
+    "id": "JS002",
+    "question": "Qual dessas opções não é permitida em um arquivo JavaScript em modo 'use strict'?",
+    "options": [
+      {
+        "answer": "Deletar uma variável",
+        "correct": true
+      },
+      {
+        "answer": "Atribuir o valor `undefined` a uma variável"
+      },
+      {
+        "answer": "Não usar ponto-e-vírgula (;) no final de cada linha"
+      },
+      {
+        "answer": "Sobreescrever o valor `length` de um array"
+      }
+    ],
+    "tags": [
+      "js",
+      "medium"
+    ]
+  },
+  {
+    "id": "JS003",
+    "question": "Qual dessas opções não é permitida em um arquivo JavaScript em modo 'use strict'?",
+    "options": [
+      {
+        "answer": "Sobreescrever a variável `undefined`",
+        "correct": true
+      },
+      {
+        "answer": "Atribuir valores em formato hexadecimal"
+      },
+      {
+        "answer": "Chamar uma função com menos argumentos do que o número de parâmetros declarados"
+      },
+      {
+        "answer": "Usar a função `setTimeout`"
+      }
+    ],
+    "tags": [
+      "js",
+      "medium"
+    ]
+  },
+  {
+    "id": "JS004",
+    "question": "Qual desses é um benefício de SSE em relação a Websocket?",
+    "options": [
+      {
+        "answer": "SSE é uma chamada HTTP, mesmo protocolo de outras requisições que o navegador já faz",
+        "correct": true
+      },
+      {
+        "answer": "SSE possui suporte nativo de todos os navegadores"
+      },
+      {
+        "answer": "SSE não possui limite de conexões abertas"
+      },
+      {
+        "answer": "SSE permite tráfego de mensagens em ambos os sentidos"
+      }
+    ],
+    "tags": [
+      "js",
+      "hard"
+    ]
+  },
+  {
+    "id": "JS005",
+    "question": "Qual desses é um benefício de Websocket em relação a SSE?",
+    "options": [
+      {
+        "answer": "Websocket permite tráfego de mensagens em ambos os sentidos",
+        "correct": true
+      },
+      {
+        "answer": "Websocket possui suporte nativo de todos os navegadores"
+      },
+      {
+        "answer": "Websocket é uma chamada HTTP, mesmo protocolo de outras requisições que o navegador já faz"
+      },
+      {
+        "answer": "Websocket é mais leve pois não precisa fazer o handshake de uma conexão TCP"
+      }
+    ],
+    "tags": [
+      "js",
+      "hard"
+    ]
+  },
+  {
+    "id": "JS006",
+    "question": "Qual dessas expressões resulta em erro?",
+    "options": [
+      {
+        "answer": "const a = 0; a++;",
+        "correct": true
+      },
+      {
+        "answer": "let a = [1, 2, 3]; a.length = 2;"
+      },
+      {
+        "answer": "undefined = 9"
+      },
+      {
+        "answer": "isNaN(NaN)"
+      }
+    ],
+    "tags": [
+      "js",
+      "medium"
+    ]
+  },
+  {
+    "id": "JS007",
+    "question": "Qual desses valores globais, quando sobreescrito, resulta em erro?",
+    "options": [
+      {
+        "answer": "null = 42;",
+        "correct": true
+      },
+      {
+        "answer": "window = 256;"
+      },
+      {
+        "answer": "undefined = 9;"
+      },
+      {
+        "answer": "document = \"IE6\";"
+      }
+    ],
+    "tags": [
+      "js",
+      "medium"
+    ]
+  },
+  {
+    "id": "JS008",
+    "question": "Dentro de qual elemento HTML pode ser inserido um bloco de código JavaScript?",
+    "options": [
+      {
+        "answer": "<script>",
+        "correct": true
+      },
+      {
+        "answer": "<js>"
+      },
+      {
+        "answer": "<scripting>"
+      },
+      {
+        "answer": "<javascript>"
+      }
+    ],
+    "tags": [
+      "js",
+      "easy"
+    ]
+  },
+  {
+    "id": "JS009",
+    "question": "Em uma página HTML, onde pode ser inserida uma tag script?",
+    "options": [
+      {
+        "answer": "Dentro do <body> ou dentro do <head>, ambas as opções são corretas",
+        "correct": true
+      },
+      {
+        "answer": "Dentro do <body>"
+      },
+      {
+        "answer": "Dentro do <head>"
+      },
+      {
+        "answer": "Tags <script> devem ser inseridas DEPOIS do <body>"
+      }
+    ],
+    "tags": [
+      "js",
+      "easy"
+    ]
+  },
+  {
+    "id": "JS010",
+    "question": "Qual é a sintaxe correta para incluir um script externo chamado \"xxx.js\"?",
+    "options": [
+      {
+        "answer": "<script src=\"xxx.js\">",
+        "correct": true
+      },
+      {
+        "answer": "<script href=\"xxx.js\">"
+      },
+      {
+        "answer": "<script name=\"xxx.js\">"
+      },
+      {
+        "answer": "<javascript name=\"xxx.js\">"
+      }
+    ],
+    "tags": [
+      "js",
+      "easy"
+    ]
+  },
+  {
+    "id": "JS011",
+    "question": "Qual a sintaxe correta de uma condição IF em JavaScript?",
+    "options": [
+      {
+        "answer": "if (i == 5)",
+        "correct": true
+      },
+      {
+        "answer": "if i = 5"
+      },
+      {
+        "answer": "if i = 5 then"
+      },
+      {
+        "answer": "if i == 5 then"
+      }
+    ],
+    "tags": [
+      "js",
+      "easy"
+    ]
+  },
+  {
+    "id": "JS012",
+    "question": "Em JavaScript, como se arredonda o número 7.25 para o número inteiro mais próximo?",
+    "options": [
+      {
+        "answer": "Math.round(7.25)",
+        "correct": true
+      },
+      {
+        "answer": "Math.rnd(7.25)"
+      },
+      {
+        "answer": "round(7.25)"
+      },
+      {
+        "answer": "rnd(7.25)"
+      }
+    ],
+    "tags": [
+      "js",
+      "easy"
+    ]
+  },
+  {
+    "id": "JS013",
+    "question": "Em JavaScript, tendo duas variáveis numéricas x e y, como se descobre qual possui maior valor?",
+    "options": [
+      {
+        "answer": "Math.max(x, y)",
+        "correct": true
+      },
+      {
+        "answer": "Math.ceil(x, y)"
+      },
+      {
+        "answer": "top(x, y)"
+      },
+      {
+        "answer": "ceil(x, y)"
+      }
+    ],
+    "tags": [
+      "js",
+      "easy"
+    ]
+  },
+  {
+    "id": "JS014",
+    "question": "Como você pode detectar o nome do navegador do cliente?",
+    "options": [
+      {
+        "answer": "navigator.appName",
+        "correct": true
+      },
+      {
+        "answer": "browser.name"
+      },
+      {
+        "answer": "client.navName"
+      },
+      {
+        "answer": "You cant"
+      }
+    ],
+    "tags": [
+      "js",
+      "easy"
+    ]
+  },
+  {
+    "id": "JS015",
+    "question": "Que evento é disparado quando um usuário clica em um elemento HTML?",
+    "options": [
+      {
+        "answer": "onclick",
+        "correct": true
+      },
+      {
+        "answer": "onmouseover"
+      },
+      {
+        "answer": "onchange"
+      },
+      {
+        "answer": "onmouseclick"
+      }
+    ],
+    "tags": [
+      "js",
+      "easy"
+    ]
+  },
+  {
+    "id": "JS016",
+    "question": "Qual das declarações abaixo não é uma declaração de função válida em JavaScript?",
+    "options": [
+      {
+        "answer": "var foo = (a, b) -> {}",
+        "correct": true
+      },
+      {
+        "answer": "function myFunction() {}"
+      },
+      {
+        "answer": "var myFunction = function() {}"
+      },
+      {
+        "answer": "var foo = _ => {}"
+      }
+    ],
+    "tags": [
+      "js",
+      "easy"
+    ]
+  },
+  {
+    "id": "JS017",
+    "question": "Qual das expressões JavaScript abaixo vai resultar em `false`?",
+    "options": [
+      {
+        "answer": "5 === \"5\"",
+        "correct": true
+      },
+      {
+        "answer": "[].length == \"\""
+      },
+      {
+        "answer": "isNaN(NaN)"
+      },
+      {
+        "answer": "0 == false"
+      }
+    ],
+    "tags": [
+      "js",
+      "easy"
+    ]
+  },
+  {
+    "id": "JS018",
+    "question": "Qual dos valores abaixo é considerado verdadeiro em JavaScript?",
+    "options": [
+      {
+        "answer": "[]",
+        "correct": true
+      },
+      {
+        "answer": "0"
+      },
+      {
+        "answer": "\"\""
+      },
+      {
+        "answer": "NaN"
+      }
+    ],
+    "tags": [
+      "js",
+      "easy"
+    ]
+  },
+  {
+    "id": "JS019",
+    "question": "Qual dos valores abaixo é considerado falso em JavaScript?",
+    "options": [
+      {
+        "answer": "\"\"",
+        "correct": true
+      },
+      {
+        "answer": "[]"
+      },
+      {
+        "answer": "{}"
+      },
+      {
+        "answer": "\"0\""
+      }
+    ],
+    "tags": [
+      "js",
+      "easy"
+    ]
+  },
+  {
+    "id": "JS020",
+    "question": "Qual dessas opções vai escrever \"Hello World\" em um alerta na tela?",
+    "options": [
+      {
+        "answer": "alert(\"Hello World\");",
+        "correct": true
+      },
+      {
+        "answer": "msgBox(\"Hello World\");"
+      },
+      {
+        "answer": "msg(\"Hello World\");"
+      },
+      {
+        "answer": "alertBox(\"Hello World\");"
+      }
+    ],
+    "tags": [
+      "js",
+      "easy"
+    ]
+  },
+  {
+    "id": "JS021",
+    "question": "Qual o nome do criador do NodeJS?",
+    "options": [
+      {
+        "answer": "Ryan Dahl",
+        "correct": true
+      },
+      {
+        "answer": "Douglas Crockford"
+      },
+      {
+        "answer": "TJ Holowaychuk"
+      },
+      {
+        "answer": "Guy Steele"
+      }
+    ],
+    "tags": [
+      "js",
+      "medium"
+    ]
+  },
+  {
+    "id": "JS022",
+    "question": "Qual versão de JavaScript foi abandonada antes de ser lançada?",
+    "options": [
+      {
+        "answer": "ECMAScript4",
+        "correct": true
+      },
+      {
+        "answer": "ECMAScript1"
+      },
+      {
+        "answer": "ECMAScript2"
+      },
+      {
+        "answer": "ECMAScript3"
+      }
+    ],
+    "tags": [
+      "js",
+      "medium"
+    ]
+  },
+  {
+    "id": "JS023",
+    "question": "Quais linguagens de programação a maioria dos navegadores consegue interpretar nativamente?",
+    "options": [
+      {
+        "answer": "Apenas JavaScript",
+        "correct": true
+      },
+      {
+        "answer": "JavaScript e PHP"
+      },
+      {
+        "answer": "JavaScript, ELM, Dart e PHP"
+      },
+      {
+        "answer": "JavaScript, ELM e Dart"
+      }
+    ],
+    "tags": [
+      "js",
+      "medium"
+    ]
+  },
+  {
+    "id": "JS024",
+    "question": "Em JavaScript, qual a melhor maneira de fazer um evento não continuar para o nível superior (bubble up)?",
+    "options": [
+      {
+        "answer": "evt.stopPropagation()",
+        "correct": true
+      },
+      {
+        "answer": "evt.preventDefault()"
+      },
+      {
+        "answer": "evt.bubble = false"
+      },
+      {
+        "answer": "evt = null"
+      }
+    ],
+    "tags": [
+      "js",
+      "medium"
+    ]
+  },
+  {
+    "id": "JS025",
+    "question": "É verdade dizer que NodeJS:",
+    "options": [
+      {
+        "answer": "É single-threaded",
+        "correct": true
+      },
+      {
+        "answer": "Não possui sistema de módulos"
+      },
+      {
+        "answer": "Não possui Garbage Collector"
+      },
+      {
+        "answer": "É, por padrão, bloqueante nas operações I/O"
+      }
+    ],
+    "tags": [
+      "js",
+      "medium"
+    ]
+  },
+  {
+    "id": "JS026",
+    "question": "Ao lidar com erros em funções assíncronas (callbacks) em NodeJS, qual dessas é considerada a melhor prática, recomendada pela biblioteca padrão da linguagem?",
+    "options": [
+      {
+        "answer": "Passar o erro como primeiro argumento da função callback",
+        "correct": true
+      },
+      {
+        "answer": "Passar o erro como último argumento da função callback"
+      },
+      {
+        "answer": "Lançar o erro com `throw`"
+      },
+      {
+        "answer": "Erros em funções assíncronas devem ser ignorados para não comprometer o fluxo principal do sistema"
+      }
+    ],
+    "tags": [
+      "js",
+      "medium"
+    ]
+  },
+  {
+    "id": "JS027",
+    "question": "Para que seria possível usar Webworkers em sua aplicação?",
+    "options": [
+      {
+        "answer": "Para minerar bitcoins usando o poder de processamento do cliente",
+        "correct": true
+      },
+      {
+        "answer": "Para manipular elementos do DOM influenciar no tempo de renderização"
+      },
+      {
+        "answer": "Para gerenciar um banco de dados usando variáveis globais acessíveis por qualquer script da aplicação"
+      },
+      {
+        "answer": "Para criar desenhos em um HTML Canvas"
+      }
+    ],
+    "tags": [
+      "js",
+      "medium"
+    ]
+  },
+  {
+    "id": "JS028",
+    "question": "Como é feita a comunicação entre um script de uma página Web com um Webworker?",
+    "options": [
+      {
+        "answer": "Por meio de uma interface com o método `postMessage()` e o evento `onmessage`",
+        "correct": true
+      },
+      {
+        "answer": "Não é possível se comunicar com os Webworkers lançados"
+      },
+      {
+        "answer": "Chamando métodos expostos pelo Webworker expostos por `module.exports`"
+      },
+      {
+        "answer": "A única comunicação possível é pelas funções callback passadas para o Worker no momento de sua criação"
+      }
+    ],
+    "tags": [
+      "js",
+      "hard"
+    ]
+  },
+  {
+    "id": "JS029",
+    "question": "Qual o resultado da operação 3+2+\"7\"?",
+    "options": [
+      {
+        "answer": "57",
+        "correct": true
+      },
+      {
+        "answer": "12"
+      },
+      {
+        "answer": "327"
+      },
+      {
+        "answer": "A operação resultará em erro"
+      }
+    ],
+    "tags": [
+      "js",
+      "easy"
+    ]
+  },
+  {
+    "id": "JS030",
+    "question": "Considere as duas funções abaixo. Qual será o retorno?",
+    "snippet": "function foo1() {  return {\n    bar: \"hello\"\n  };\n} function foo2() {  return\n  {\n    bar: \"hello\"\n  };\n}\n",
+    "options": [
+      {
+        "answer": "{bar: \"hello\"} e undefined",
+        "correct": true
+      },
+      {
+        "answer": "{bar: \"hello\"} e {bar: \"hello\"}"
+      },
+      {
+        "answer": "Ocorrerá um erro"
+      },
+      {
+        "answer": "undefined e undefined"
+      }
+    ],
+    "tags": [
+      "js",
+      "easy"
+    ]
+  },
+  {
+    "id": "JS031",
+    "question": "Qual será o resultado do código abaixo:",
+    "snippet": "console.log(1 +  \"2\" + \"2\"); console.log(1 +  +\"2\" + \"2\"); console.log(1 +  -\"1\" + \"2\"); console.log(+\"1\" +  \"1\" + \"2\"); console.log( \"A\" - \"B\" + \"2\"); console.log( \"A\" - \"B\" + 2);\n",
+    "options": [
+      {
+        "answer": "\"122\", \"32\", \"02\", \"112\", \"NaN2\" e NaN",
+        "correct": true
+      },
+      {
+        "answer": "5, \"14\", \"2\", 4, NaN e NaN"
+      },
+      {
+        "answer": "\"1NaN\", \"32\", 02, \"4\", \"AB2\" e AB2"
+      },
+      {
+        "answer": "\"5\", 5, \"112\", 112, \"NaN2\" e NaN2"
+      }
+    ],
+    "tags": [
+      "js",
+      "medium"
+    ]
+  },
+  {
+    "id": "JS032",
+    "question": "Qual será o resultado do código abaixo:",
+    "snippet": "for (var i = 0; i < 5; i++) {  setTimeout(function() { console.log(i); }, i * 1000 );\n}\n",
+    "options": [
+      {
+        "answer": "5, 5, 5, 5, e 5",
+        "correct": true
+      },
+      {
+        "answer": "1, 2, 3, 4 e 5"
+      },
+      {
+        "answer": "1, 1, 1, 1 e 1"
+      },
+      {
+        "answer": "5, 4, 3, 2 e 1"
+      }
+    ],
+    "tags": [
+      "js",
+      "easy"
+    ]
+  },
+  {
+    "id": "JS033",
+    "question": "Qual das opções descreve melhor uma arrow function?",
+    "options": [
+      {
+        "answer": "uma sintaxe mais curta que uma expressão de função e não tem seu próprio this, arguments, super ou new.target.",
+        "correct": true
+      },
+      {
+        "answer": "um recurso para facilitar a criação de closures"
+      },
+      {
+        "answer": "um novo tipo de função que retorna ponteiros"
+      },
+      {
+        "answer": "uma função utilitária do ES6"
+      }
+    ],
+    "tags": [
+      "js",
+      "easy"
+    ]
+  },
+  {
+    "id": "JS034",
+    "question": "Qual opção descreve melhor um WeakMap?",
+    "options": [
+      {
+        "answer": "é um tipo de mapa que as chaves devem ser objetos",
+        "correct": true
+      },
+      {
+        "answer": "é um tipo de mapa que permite múltiplas chaves"
+      },
+      {
+        "answer": "é uma estratégia para criar mapas mais performáticos"
+      },
+      {
+        "answer": "é um novo recurso que permite recuperar valores pela posição de inserção"
+      }
+    ],
+    "tags": [
+      "js",
+      "medium"
+    ]
+  },
+  {
+    "id": "JS035",
+    "question": "Qual será o resultado do código abaixo?",
+    "snippet": "var y = 1; if (function F(){}) {  y += Typeof F;\n} console.log(y);\n",
+    "options": [
+      {
+        "answer": "1undefined",
+        "correct": true
+      },
+      {
+        "answer": 1
+      },
+      {
+        "answer": null
+      },
+      {
+        "answer": "1null"
+      }
+    ],
+    "tags": [
+      "js",
+      "medium"
+    ]
+  },
+  {
+    "id": "JS036",
+    "question": "Qual será o resultado do código abaixo?",
+    "snippet": "var foo = function bar() {  return 7;\n}; typeof bar();\n",
+    "options": [
+      {
+        "answer": "Reference Error",
+        "correct": true
+      },
+      {
+        "answer": 7
+      },
+      {
+        "answer": "undefined"
+      },
+      {
+        "answer": "Syntax Error"
+      }
+    ],
+    "tags": [
+      "js",
+      "medium"
+    ]
+  },
+  {
+    "id": "JS037",
+    "question": "Qual empresa desenvolveu o JavaScript?",
+    "options": [
+      {
+        "answer": "Netscape Communications",
+        "correct": true
+      },
+      {
+        "answer": "Sun Microsystems"
+      },
+      {
+        "answer": "Microsoft Corporation"
+      },
+      {
+        "answer": "BEA Systems"
+      }
+    ],
+    "tags": [
+      "js",
+      "easy"
+    ]
+  },
+  {
+    "id": "JS038",
+    "question": "Qual opção possui tipos primitivos válidos no JavaScript (ECMAScript6)?:",
+    "options": [
+      {
+        "answer": "String, Number, Boolean, Null, Undefined e Symbol",
+        "correct": true
+      },
+      {
+        "answer": "String, Integer, Boolean, Undefined e Object"
+      },
+      {
+        "answer": "String, Number, Boolean, Undefined e Function"
+      },
+      {
+        "answer": "String, Number, Boolean, Int, Undefined e Symbol"
+      }
+    ],
+    "tags": [
+      "js",
+      "easy"
+    ]
+  }
+]

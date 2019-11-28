@@ -1,0 +1,186 @@
+[
+  {
+    "id": "SEC001",
+    "question": "Qual destas é a melhor maneira de se proteger contra ameaças de injeção?",
+    "options": [
+      {
+        "answer": "Realizar consultas SQL usando Prepared Statement",
+        "correct": true
+      },
+      {
+        "answer": "Realizar consultas SQL baseadas no input dos usuários"
+      },
+      {
+        "answer": "Criptografar o conteúdo das requisições HTTP"
+      },
+      {
+        "answer": "Validar valores inteiros antes de usá-los como referencia em arrays"
+      }
+    ],
+    "tags": [
+      "sec",
+      "medium"
+    ]
+  },
+  {
+    "id": "SEC002",
+    "question": "O que é Cross-Site Scripting (XSS)?",
+    "options": [
+      {
+        "answer": "Um ataque de injeção de código, onde um script malicioso é injetado em um aplicativo Web",
+        "correct": true
+      },
+      {
+        "answer": "Um mecanismo que permite que scripts de uma aplicação possam acessar recursos de outro domínio"
+      },
+      {
+        "answer": "Um mecanismo que impede que scripts de uma aplicação possam acessar recursos de outro domínio"
+      },
+      {
+        "answer": "Um ataque de injeção de código, onde os scripts de um site ou aplicação são capturados e disponibilizados para um terceiro; geralmente usado para clonar funcionalidades de concorrentes"
+      }
+    ],
+    "tags": [
+      "sec",
+      "medium"
+    ]
+  },
+  {
+    "id": "SEC003",
+    "question": "A flag HttpOnly deve ser usada para garantir que os cookies:",
+    "options": [
+      {
+        "answer": "Não fiquem disponíveis para scripts do usuário",
+        "correct": true
+      },
+      {
+        "answer": "Sejam deletados assim que o usuário fecha o navegador"
+      },
+      {
+        "answer": "Sejam enviados apenas por conexões seguras"
+      },
+      {
+        "answer": "Sejam persistentes"
+      }
+    ],
+    "tags": [
+      "sec",
+      "hard"
+    ]
+  },
+  {
+    "id": "SEC004",
+    "question": "Qual fonte de input pode ser manipulada por um usuário malicioso?",
+    "options": [
+      {
+        "answer": "Parâmetros em requisições GET/POST",
+        "correct": true
+      },
+      {
+        "answer": "Arquivos de configuração de servidores"
+      },
+      {
+        "answer": "Portas dos serviços"
+      },
+      {
+        "answer": "Código fonte dos serviços que rodam no servidor"
+      }
+    ],
+    "tags": [
+      "sec",
+      "medium"
+    ]
+  },
+  {
+    "id": "SEC005",
+    "question": "Para que é importante o uso de CAPTCHAs?",
+    "options": [
+      {
+        "answer": "Para proteger sistemas de autenticação contra ataques de força-bruta",
+        "correct": true
+      },
+      {
+        "answer": "Para criar IDs de sessão criptografados"
+      },
+      {
+        "answer": "Para proteger credenciais usando criptografia assimétrica"
+      },
+      {
+        "answer": "Para garantir que sistemas de autenticação implementem funcionalidades de timeout por inatividade"
+      }
+    ],
+    "tags": [
+      "sec",
+      "medium"
+    ]
+  },
+  {
+    "id": "SEC006",
+    "question": "Sua aplicação salva um cookie com o atributo Secure. O que isso significa?",
+    "options": [
+      {
+        "answer": "O cookie só será trafegado usando conexões HTTPS",
+        "correct": true
+      },
+      {
+        "answer": "O cookie não poderá ser acessado por arquivos JavaScript"
+      },
+      {
+        "answer": "O cookie não será enviado em requisições para outros domínios"
+      },
+      {
+        "answer": "O cookie é deletado assim que o usuário fecha o navegador"
+      }
+    ],
+    "tags": [
+      "sec",
+      "hard"
+    ]
+  },
+  {
+    "id": "SEC007",
+    "question": "Se meu site estiver com HTTPS, quais ataques estou evitando?",
+    "options": [
+      {
+        "answer": "Man-in-the-middle",
+        "correct": true
+      },
+      {
+        "answer": "Denial of Service (DDOS)"
+      },
+      {
+        "answer": "Cross-Site script (XSS)"
+      },
+      {
+        "answer": "Cross-Site Request Forgery (CSRF)"
+      }
+    ],
+    "tags": [
+      "sec",
+      "hard"
+    ]
+  },
+  {
+    "id": "SEC008",
+    "question": "As validações feitas no frontend da minha aplicação são suficientes?",
+    "options": [
+      {
+        "answer": "Não, pois são facilmente contornados",
+        "correct": true
+      },
+      {
+        "answer": "Não, pois JavaScript não é uma linguagem fortemente tipada"
+      },
+      {
+        "answer": "Sim, pois é melhor validar os inputs em apenas um lugar"
+      },
+      {
+        "answer": "Sim, pois as conexões HTTP são totalmente seguras"
+      }
+    ],
+    "tags": [
+      "sec",
+      "easy"
+    ]
+  }
+]

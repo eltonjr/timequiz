@@ -1,0 +1,278 @@
+[
+  {
+    "id": "CS001",
+    "question": "Quantos bits tem um byte?",
+    "options": [
+      {
+        "answer": "8",
+        "correct": true
+      },
+      {
+        "answer": "Depende da arquitetura do processador"
+      },
+      {
+        "answer": "2"
+      },
+      {
+        "answer": "1024"
+      }
+    ],
+    "tags": [
+      "cs",
+      "easy"
+    ]
+  },
+  {
+    "id": "CS002",
+    "question": "Qual comando UNIX faz pesquisa por padrões em um arquivo ou output?",
+    "options": [
+      {
+        "answer": "grep",
+        "correct": true
+      },
+      {
+        "answer": "find"
+      },
+      {
+        "answer": "search"
+      },
+      {
+        "answer": "locate"
+      }
+    ],
+    "tags": [
+      "unix",
+      "easy"
+    ]
+  },
+  {
+    "id": "CS003",
+    "question": "Qual comando UNIX imprime o diretório atual?",
+    "options": [
+      {
+        "answer": "pwd",
+        "correct": true
+      },
+      {
+        "answer": "dir"
+      },
+      {
+        "answer": "whereami"
+      },
+      {
+        "answer": "locate"
+      }
+    ],
+    "tags": [
+      "unix",
+      "easy"
+    ]
+  },
+  {
+    "id": "CS004",
+    "question": "Qual comando UNIX imprime os processos rodando na máquina?",
+    "options": [
+      {
+        "answer": "ps",
+        "correct": true
+      },
+      {
+        "answer": "proc"
+      },
+      {
+        "answer": "cat /proc"
+      },
+      {
+        "answer": "grep"
+      }
+    ],
+    "tags": [
+      "unix",
+      "medium"
+    ]
+  },
+  {
+    "id": "CS005",
+    "question": "Como é a sintaxe para escrever comentários em um JSON?",
+    "options": [
+      {
+        "answer": "JSON não permite comentários",
+        "correct": true
+      },
+      {
+        "answer": "// this is a comment"
+      },
+      {
+        "answer": "# this is a comment"
+      },
+      {
+        "answer": "/* this is a comment */"
+      }
+    ],
+    "tags": [
+      "cs",
+      "easy"
+    ]
+  },
+  {
+    "id": "CS006",
+    "question": "Quem é Tim Berners-Lee?",
+    "options": [
+      {
+        "answer": "O inventor da Web",
+        "correct": true
+      },
+      {
+        "answer": "O inventor da Internet"
+      },
+      {
+        "answer": "O criador do JavaScript"
+      },
+      {
+        "answer": "O fundador da Amazon"
+      }
+    ],
+    "tags": [
+      "cs",
+      "easy"
+    ]
+  },
+  {
+    "id": "CS007",
+    "question": "Quem foi o criador do JavaScript?",
+    "options": [
+      {
+        "answer": "Brendan Eich",
+        "correct": true
+      },
+      {
+        "answer": "Tim Berners-Lee"
+      },
+      {
+        "answer": "Douglas Crockford"
+      },
+      {
+        "answer": "John Resig"
+      }
+    ],
+    "tags": [
+      "cs",
+      "medium"
+    ]
+  },
+  {
+    "id": "CS008",
+    "question": "Antes de ter sua sintaxe alterada para parecer Java, em qual outra linguagem de programação JavaScript foi inspirado?",
+    "options": [
+      {
+        "answer": "Lisp",
+        "correct": true
+      },
+      {
+        "answer": "Python"
+      },
+      {
+        "answer": "Fortran"
+      },
+      {
+        "answer": "BASIC"
+      }
+    ],
+    "tags": [
+      "cs",
+      "medium"
+    ]
+  },
+  {
+    "id": "CS009",
+    "question": "O que é SWAP?",
+    "options": [
+      {
+        "answer": "Um espaço de memória virtual criado em disco para extender a RAM",
+        "correct": true
+      },
+      {
+        "answer": "Um acrônimo para um conjunto de ferramentas para desenvolvimento web, incluindo PHP e Apache"
+      },
+      {
+        "answer": "Um sistema padronizado para criar e documentar serviços RESTful"
+      },
+      {
+        "answer": "O comando UNIX para alterar a senha de um usuário"
+      }
+    ],
+    "tags": [
+      "cs",
+      "easy"
+    ]
+  },
+  {
+    "id": "CS010",
+    "question": "Em HTTP, o que significa um status da família 4xx?",
+    "options": [
+      {
+        "answer": "Aconteceu um erro causado pelo cliente",
+        "correct": true
+      },
+      {
+        "answer": "Aconteceu um erro causado pelo servidor"
+      },
+      {
+        "answer": "O recurso não foi encontrado"
+      },
+      {
+        "answer": "O usuário não tem permissão para acessar os dados requisitados"
+      }
+    ],
+    "tags": [
+      "cs",
+      "easy"
+    ]
+  },
+  {
+    "id": "CS011",
+    "question": "Em HTTP, o que significa um status da família 5xx?",
+    "options": [
+      {
+        "answer": "Aconteceu um erro causado pelo servidor",
+        "correct": true
+      },
+      {
+        "answer": "Aconteceu um erro causado pelo cliente"
+      },
+      {
+        "answer": "O servidor está demorando muito para responder"
+      },
+      {
+        "answer": "O usuário não tem permissão para acessar os dados requisitados"
+      }
+    ],
+    "tags": [
+      "cs",
+      "easy"
+    ]
+  },
+  {
+    "id": "CS012",
+    "question": "Existe algum órgão responsável por definir padrões na Web?",
+    "options": [
+      {
+        "answer": "Sim, a W3C",
+        "correct": true
+      },
+      {
+        "answer": "Sim, a MDN"
+      },
+      {
+        "answer": "Não existe"
+      },
+      {
+        "answer": "Sim, a Linux Foundation"
+      }
+    ],
+    "tags": [
+      "cs",
+      "medium"
+    ]
+  }
+]
