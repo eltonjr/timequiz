@@ -40,11 +40,13 @@ module.exports = {
   fillUserWithForm (fuser) {
     this.currentUser.name = fuser.name
     this.currentUser.email = fuser.email
+    return this.currentUser
   },
 
   fillUserWithScore (suser) {
     this.currentUser.score = suser.score
     this.currentUser.time = suser.time
+    return this.currentUser
   }
 
 }

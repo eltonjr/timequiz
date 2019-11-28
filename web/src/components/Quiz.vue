@@ -17,7 +17,7 @@
           <div class="control" v-if="question.snippet">
             <p>{{question.snippet}}</p>
           </div>
-          <div class="control" v-for="(item, i) in question.options" :key="i" @click="next()">
+          <div class="control" v-for="(item, i) in question.options" :key="i" @click.stop.prevent="next(item)">
             <label class="radio">
               <input type="radio" name="answer" :option="item.answer" :value="item.answer">
               {{item.answer}}
@@ -33,8 +33,8 @@
 
 import moment from 'moment'
 import serviceQuiz from '@/components/quiz'
-// import serviceScore from '@/components/scores'
-// import serviceForm from '@/components/form'
+import serviceScore from '@/components/scores'
+import serviceForm from '@/components/form'
 
 const MAX_TIME = 5
 
@@ -46,8 +46,7 @@ export default {
     return {
       currentQuestion: 0,
       question: '',
-      snippet: '',
-      options: [],
+      score: 0,
       dueDate: moment().add(MAX_TIME, 'minutes'),
       remaining: '',
       interval: null
@@ -64,12 +63,13 @@ export default {
       this.questions = serviceQuiz.loadQuestions()
       this.question = this.questions[0]
     },
-    next () {
-      if (this.currentQuestion === 9) {
-        // calc score
-        // pass user to postScore
-        // serviceForm.fillUserWithScore()
-        // let a = serviceScore.postScore()
+    next (answer) {
+      if (answer.correct) {
+        this.score += 1
+      }
+      if (this.currentQuestion === this.questions.length - 1) {
+        let user = serviceForm.fillUserWithScore({score: this.score, time: this.remaining})
+        serviceScore.postScore(user)
         return
       }
       this.currentQuestion += 1
