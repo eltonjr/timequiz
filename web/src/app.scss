@@ -1,0 +1,25 @@
+$neo-black:           #000;
+$neo-white:           #fff;
+
+// Greyscale
+$neo-grey-darker:     #4a4a4a;
+$neo-grey-dark:       #666779;
+$neo-grey:            #a7a9b4;
+$neo-grey-light:      #dadbe7;
+$neo-grey-lighter:    #eff0f4;
+$neo-grey-lightest:   #f7f7fd;
+
+// Primary Colors
+$neo-red:             #d3312f;
+$neo-turquoise:       #3cb5c6;
+$neo-orange-light:    #ffa52b;
+$neo-blue:            #2474a9;
+$neo-blue-light:      #39a9db;
+$neo-blue-dark:       #306297;
+$neo-orange:          #f8572b;
+$neo-green:           #96ba14;
+
+$primary: $neo-blue-dark;
+
+@import "bulma";
+

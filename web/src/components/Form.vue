@@ -1,11 +1,29 @@
 <template>
-  <div>
-    <span v-if="feedback">{{feedback}}</span>
+  <div class="columns">
+    <div class="column is-4 is-offset-4">
+      <form>
+        <span v-if="feedback">{{feedback}}</span>
 
-    <input placeholder="Nome" type="text" name="name" v-model="form.name">
-    <input placeholder="Email" type="text" name="email" v-model="form.email">
-    <button @click="goToScores()">Voltar</button>
-    <button @click="goToQuiz()">Começar</button>
+        <div class="field">
+          <label class="label">Nome</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Nome" v-model="form.name">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Email" v-model="form.email">
+          </div>
+        </div>
+
+        <div class="control">
+          <button @click="goToScores()" class="button is-text">Voltar</button>
+          <button @click="goToQuiz()" class="button is-primary">Começar</button>
+        </div>
+      </form>
+    </div>
   </div>
 </template>
 

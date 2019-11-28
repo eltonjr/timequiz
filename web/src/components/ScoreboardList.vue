@@ -1,13 +1,34 @@
 <template>
-  <div>
-    <scoreboard-item v-for="(item, i) in scores" :key="i" :item="item" :index="i+1"></scoreboard-item>
-    <button @click="goToForm()">Começar quiz</button>
-  </div>
+
+  <section class="section">
+    <div class="container">
+      <table class="table is-fullwidth is-striped">
+        <thead>
+          <th>#</th>
+          <th>Nome</th>
+          <th>Pontuação</th>
+          <th>Tempo</th>
+        </thead>
+        <tbody>
+          <tr v-for="(item, i) in scores" :key="i">
+            <td>{{i+1}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.score}}</td>
+            <td>{{item.time}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button @click="goToForm()" class="button is-primary">Começar quiz</button>
+    </div>
+  </section>
+
+  <!-- <div>
+   </div>-->
 </template>
 
 <script>
 import service from '@/components/scores'
-import ScoreboardItem from '@/components/ScoreboardItem'
 
 export default {
   name: 'ScoreboardList',
@@ -39,7 +60,6 @@ export default {
   watch: {
   },
   components: {
-    ScoreboardItem
   }
 }
 </script>
