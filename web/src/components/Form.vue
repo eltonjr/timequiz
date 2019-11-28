@@ -1,19 +1,26 @@
 <template>
-  <router-view/>
-  <!-- here goes the score + quiz -->
+  <div>
+    FORM AQUI
+  </div>
 </template>
 
 <script>
 
 export default {
-  name: 'App',
+  name: 'Form',
+  props: {
+  },
   data () {
     return {
     }
   },
+  mounted () {
+  },
   computed: {
   },
   methods: {
+  },
+  watch: {
   },
   components: {
   }
@@ -21,13 +28,4 @@ export default {
 </script>
 
 <style lang="sass">
-  @import "bulma";
-
-  body {
-    background-color: #fff;
-  }
-
-  .small-padding {
-    padding: .75rem;
-  }
 </style>

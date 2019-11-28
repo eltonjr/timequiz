@@ -1,6 +1,7 @@
 <template>
   <div>
     <scoreboard-item v-for="(item, i) in scores" :key="i" :item="item" :index="i+1"></scoreboard-item>
+    <button @click="goToForm()">Começar quiz</button>
   </div>
 </template>
 
@@ -31,6 +32,9 @@ export default {
   computed: {
   },
   methods: {
+    goToForm () {
+      this.$router.push({ name: 'form' })
+    }
   },
   watch: {
   },
