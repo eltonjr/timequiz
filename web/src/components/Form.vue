@@ -27,6 +27,7 @@ export default {
     }
   },
   mounted () {
+    service.clear()
   },
   computed: {
   },
@@ -40,6 +41,7 @@ export default {
         this.feedback = validMsg
         return
       }
+      service.fillUserWithForm(this.form)
       this.$router.push({ name: 'quiz' })
     }
   },

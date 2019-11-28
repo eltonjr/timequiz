@@ -9,6 +9,13 @@ module.exports = {
 
   ok: 'ok',
 
+  currentUser: {
+    name: '',
+    email: '',
+    score: -1,
+    time: 999
+  },
+
   validateForm (payload) {
     if (!payload.name) {
       return missingName
@@ -19,5 +26,25 @@ module.exports = {
     }
 
     return this.ok
+  },
+
+  clear () {
+    this.currentUser = {
+      name: '',
+      email: '',
+      score: -1,
+      time: 999
+    }
+  },
+
+  fillUserWithForm (fuser) {
+    this.currentUser.name = fuser.name
+    this.currentUser.email = fuser.email
+  },
+
+  fillUserWithScore (suser) {
+    this.currentUser.score = suser.score
+    this.currentUser.time = suser.time
   }
+
 }
