@@ -1,6 +1,6 @@
 <template>
-
   <section class="section">
+    <page-header :showButton="true"></page-header>
     <div class="container">
       <table class="table is-fullwidth is-striped">
         <thead>
@@ -27,6 +27,7 @@
 
 <script>
 import service from '@/components/scores'
+import PageHeader from '@/components/header/Header'
 
 export default {
   name: 'ScoreboardList',
@@ -53,6 +54,7 @@ export default {
   watch: {
   },
   components: {
+    PageHeader
   }
 }
 </script>

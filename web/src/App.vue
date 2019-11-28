@@ -1,6 +1,5 @@
 <template>
   <div>
-    <page-header></page-header>
     <router-view/>
   </div>
   <!-- here goes the score + quiz -->

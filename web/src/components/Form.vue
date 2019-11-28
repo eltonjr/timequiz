@@ -1,27 +1,26 @@
 <template>
   <section class="section">
-    <div class="columns">
+    <page-header :showButton="false"></page-header>
+    <div class="columns user-form">
       <div class="column is-4 is-offset-4">
         <form>
-          <span v-if="feedback">{{feedback}}</span>
+          <span class="error" v-if="feedback">{{feedback}}</span>
 
           <div class="field">
-            <label class="label">Nome</label>
             <div class="control">
               <input class="input" type="text" placeholder="Nome" v-model="form.name">
             </div>
           </div>
 
           <div class="field">
-            <label class="label">Email</label>
             <div class="control">
               <input class="input" type="text" placeholder="Email" v-model="form.email">
             </div>
           </div>
 
-          <div class="control">
+          <div class="control form-actions">
             <button @click="goToScores()" class="button is-text">Voltar</button>
-            <button @click="goToQuiz()" class="button is-primary">Começar</button>
+            <button @click="goToQuiz()" class="button is-light">Começar</button>
           </div>
         </form>
       </div>
@@ -32,6 +31,7 @@
 <script>
 
 import service from '@/components/form'
+import PageHeader from '@/components/header/Header'
 
 export default {
   name: 'Form',
@@ -68,9 +68,25 @@ export default {
   watch: {
   },
   components: {
+    PageHeader
   }
 }
 </script>
 
-<style lang="sass">
+<style lang="scss">
+@import '../helpers/styles/base.scss';
+
+.user-form{
+  width: 100%;
+  position: absolute;
+  top: 52vh;
+
+  .error{
+    color: $color-error;
+  }
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 </style>

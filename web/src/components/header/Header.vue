@@ -8,7 +8,7 @@
       </h1>
 
       <div class="header__actions">
-        <button @click="goToForm()" class="btn btn--white btn--animated">Começar</button>
+        <button v-if="showButton" @click="goToForm()" class="btn btn--white btn--animated">Começar</button>
       </div>
     </div>
   </section>
@@ -17,6 +17,7 @@
 <script>
 export default {
   name: 'PageHeader',
+  props: ['showButton'],
   methods: {
     goToForm () {
       console.log('asdasdsadas')
@@ -59,27 +60,27 @@ export default {
 }
 
 .heading-primary {
-    color: $color-white;
-    text-transform: uppercase;
+  color: $color-white;
+  text-transform: uppercase;
 
-    backface-visibility: hidden;
-    margin-bottom: 6rem;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
 
-    &__main {
-        display: block;
-        font-size: 6rem;
-        font-weight: 400;
-        letter-spacing: .5rem;
+  &__main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: .5rem;
 
-        animation: moveInLeft 1s ease-out;
-    }
+    animation: moveInLeft 1s ease-out;
+  }
 
-    &__sub {
-        display: block;
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: 1.3rem;
-        animation: moveInRight 1s ease-out;
-    }
+  &__sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.3rem;
+    animation: moveInRight 1s ease-out;
+  }
 }
 </style>
