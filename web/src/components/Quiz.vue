@@ -1,15 +1,24 @@
 <template>
-  <div>
-      <span>{{question.question}}</span>
-      <span v-if="question.snippet">{{question.snippet}}</span>
-      <div v-for="(item, i) in question.options" :key="i">
-        <input type="radio"
-          :option="item.answer"
-          :value="item.answer">
-        <label>{{item.answer}}</label>
+  <section class="section">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <form>
+          <div class="control">
+            <p>{{question.question}}</p>
+          </div>
+          <div class="control" v-if="question.snippet">
+            <p>{{question.snippet}}</p>
+          </div>
+          <div class="control" v-for="(item, i) in question.options" :key="i" @click="next()">
+            <label class="radio">
+              <input type="radio" name="answer" :option="item.answer" :value="item.answer">
+              {{item.answer}}
+            </label>
+          </div>
+        </form>
       </div>
-    <button @click="next()">Avançar</button>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script>
