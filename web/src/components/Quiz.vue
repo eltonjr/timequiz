@@ -1,9 +1,10 @@
 <template>
   <section class="section">
-    <div class="columns">
+    <page-header :showButton="false" :showTexts="false"></page-header>
+    <div class="columns quiz">
       <div class="column is-8 is-offset-2">
 
-        <div>
+        <div class="remaining">
           <!-- TODO progress -->
           <!-- TODO current score -->
           <!-- TODO timer -->
@@ -11,7 +12,7 @@
         </div>
 
         <form>
-          <div class="control">
+          <div class="control question">
             <p>{{question.question}}</p>
           </div>
           <div class="control" v-if="question.snippet">
@@ -35,6 +36,7 @@ import moment from 'moment'
 import serviceQuiz from '@/components/quiz'
 import serviceScore from '@/components/scores'
 import serviceForm from '@/components/form'
+import PageHeader from '@/components/header/Header'
 
 const MAX_TIME = 5
 
@@ -88,9 +90,32 @@ export default {
   watch: {
   },
   components: {
+    PageHeader
   }
 }
 </script>
 
-<style lang="sass">
+<style lang="scss">
+.quiz{
+  width: 100%;
+  position: absolute;
+  top: 20vh;
+  color: white;
+  font-weight: 600;
+
+  .remaining{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+
+  .question{
+    margin-bottom: 20px;
+  }
+
+  .radio{
+    margin-bottom: 10px;
+  }
+}
 </style>

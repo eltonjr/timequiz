@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <page-header :showButton="true"></page-header>
+    <page-header :showButton="true" :showTexts="true"></page-header>
     <div class="container">
       <table class="table is-fullwidth is-striped">
         <thead>

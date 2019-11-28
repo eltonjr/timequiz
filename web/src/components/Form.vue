@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <page-header :showButton="false"></page-header>
+    <page-header :showButton="false" :showTexts="true"></page-header>
     <div class="columns user-form">
       <div class="column is-4 is-offset-4">
         <form>

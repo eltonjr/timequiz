@@ -2,7 +2,7 @@
   <section class="header">
     <img class="neoway-logo" src="static/assets/neoway.svg">
     <div class="header__form-box">
-      <h1 class="heading-primary">
+      <h1 class="heading-primary" v-if="showTexts">
         <span class="heading-primary__main">Quiz</span>
         <span class="heading-primary__sub">There is more to know</span>
       </h1>
@@ -17,7 +17,7 @@
 <script>
 export default {
   name: 'PageHeader',
-  props: ['showButton'],
+  props: ['showButton', 'showTexts'],
   methods: {
     goToForm () {
       console.log('asdasdsadas')
