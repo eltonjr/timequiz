@@ -29,7 +29,7 @@ export default {
 <style lang="scss">
 @import '../../helpers/styles/base.scss';
 .header {
-  height: 95vh;
+  height: 75vh;
   background-image: linear-gradient(
     to right bottom,
     rgba($primary, 0.8),
@@ -41,7 +41,7 @@ export default {
   background-position: top;
   position: relative;
 
-  clip-path: polygon(0 0, 100% 0, 100% 75vh,0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 63vh,0 100%);
 
   &__form-box {
     position: absolute;
