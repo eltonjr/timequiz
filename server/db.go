@@ -11,13 +11,15 @@ import (
 )
 
 type Score struct {
+	Name  string
 	Email string
 	Score int
 	Time  int
 }
 
 const (
-	COLUMN_EMAIL = iota
+	COLUMN_NAME = iota
+	COLUMN_EMAIL
 	COLUMN_SCORE
 	COLUMN_TIME
 )
@@ -33,7 +35,7 @@ func saveScore(score *Score) error {
 	timeStr := strconv.Itoa(score.Time)
 
 	content := [][]string{
-		{score.Email, scoreStr, timeStr},
+		{score.Name, score.Email, scoreStr, timeStr},
 	}
 
 	writer := csv.NewWriter(file)
@@ -75,9 +77,10 @@ func getScores() ([]Score, error) {
 		}
 
 		records = append(records, Score{
+			Name:  line[COLUMN_NAME],
 			Email: line[COLUMN_EMAIL],
 			Score: score,
-			Time: time,
+			Time:  time,
 		})
 	}
 

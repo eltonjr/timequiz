@@ -12,11 +12,11 @@ import (
 )
 
 var scores = []Score{
-	{"leonardo@mail.com", 5, 3000},
-	{"donatello@mail.com", 3, 7000},
-	{"michelangelo@mail.com", 10, 12000},
-	{"raphael@mail.com", 2, 3000},
-	{"splinter@mail.com", 10, 10000},
+	{"Leonardo", "leonardo@mail.com", 5, 3000},
+	{"Donatello", "donatello@mail.com", 3, 7000},
+	{"Michelangelo", "michelangelo@mail.com", 10, 12000},
+	{"Raphael", "raphael@mail.com", 2, 3000},
+	{"Mestre Spliter", "splinter@mail.com", 10, 10000},
 }
 
 func TestHandlers(t *testing.T) {
