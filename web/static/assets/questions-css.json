@@ -1,0 +1,232 @@
+[
+  {
+    "id": "CSS001",
+    "question": "Quando deseja-se aplicar um estilo diretamente na tag, esse tipo de inserção é chamado de:",
+    "options": [
+      {
+        "answer": "Inline",
+        "correct": true
+      },
+      {
+        "answer": "Incorporado"
+      },
+      {
+        "answer": "Intag"
+      },
+      {
+        "answer": "Off-tag"
+      }
+    ],
+    "tags": [
+      "css",
+      "easy"
+    ]
+  },
+  {
+    "id": "CSS002",
+    "question": "O que significa a sigla CSS:",
+    "options": [
+      {
+        "answer": "Computer Style Sheets"
+      },
+      {
+        "answer": "Colorful Style Sheets"
+      },
+      {
+        "answer": "Creative Style Sheets"
+      },
+      {
+        "answer": "Cascading Style Sheets",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "css",
+      "easy"
+    ]
+  },
+  {
+    "id": "CSS003",
+    "question": "Qual tipo de seletor é utilizado para chegar ao elemento adjacente do outro elemento?",
+    "options": [
+      {
+        "answer": ". (ponto)"
+      },
+      {
+        "answer": "> (maior)"
+      },
+      {
+        "answer": "+ (adição)",
+        "correct": true
+      },
+      {
+        "answer": "(espaço)"
+      }
+    ],
+    "tags": [
+      "css",
+      "medium"
+    ]
+  },
+  {
+    "id": "CSS004",
+    "question": "Supondo que todos os seletores designem o mesmo elemento, qual tem a maior prioridade de seleção?",
+    "options": [
+      {
+        "answer": "#page ul li a {}"
+      },
+      {
+        "answer": "#page .menu a {}",
+        "correct": true
+      },
+      {
+        "answer": "div.menu ul li a {}"
+      },
+      {
+        "answer": "div#page ul a {}"
+      }
+    ],
+    "tags": [
+      "css",
+      "hard"
+    ]
+  },
+  {
+    "id": "CSS005",
+    "question": "Qual das opções a seguir não é um valor da propriedade \"display\"?",
+    "options": [
+      {
+        "answer": "list-item"
+      },
+      {
+        "answer": "inline-block"
+      },
+      {
+        "answer": "table-legend",
+        "correct": true
+      },
+      {
+        "answer": "inline-table"
+      }
+    ],
+    "tags": [
+      "css",
+      "medium"
+    ]
+  },
+  {
+    "id": "CSS006",
+    "question": "Sobre o posicionamento relativo no css (position: relative)",
+    "options": [
+      {
+        "answer": "Permitir posicionar um elemento em relação a outro elemento, tomado como referência"
+      },
+      {
+        "answer": "Permitir posicionar um elemento em relação aos limites do seu elemento pai"
+      },
+      {
+        "answer": "Permite deslocar um elemento A em relação à sua posição \"normal\", no fluxo",
+        "correct": true
+      },
+      {
+        "answer": "Permite aplicar a teoria da relatividade geral E a teoria da relatividade restrita a um layout"
+      }
+    ],
+    "tags": [
+      "css",
+      "hard"
+    ]
+  },
+  {
+    "id": "CSS007",
+    "question": "Onde um elemento posicionado em absoluto (position: absolute) será posicionado à esquerda: 100px?",
+    "options": [
+      {
+        "answer": "100px a partir da borda esquerda da janela do navegador"
+      },
+      {
+        "answer": "A 100px da borda esquerda do elemento html"
+      },
+      {
+        "answer": "A 100px da borda esquerda do elemento body"
+      },
+      {
+        "answer": "A 100px da borda esquerda de seu ancestral mais próximo posicionado",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "css",
+      "medium"
+    ]
+  },
+  {
+    "id": "CSS008",
+    "question": "Após uma imagem flutuante à direita (float: right;), coloque um título h2. Como ter certeza que será colocado abaixo da imagem flutuante?",
+    "options": [
+      {
+        "answer": "img {clear: left;}"
+      },
+      {
+        "answer": "img {clear: right;}"
+      },
+      {
+        "answer": "h2 {clear: left;}"
+      },
+      {
+        "answer": "h2 {clear: right;}",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "css",
+      "medium"
+    ]
+  },
+  {
+    "id": "CSS009",
+    "question": "Como forçar uma quebra de linha usando CSS3?",
+    "options": [
+      {
+        "answer": "text-wrap: break"
+      },
+      {
+        "answer": "word-wrap: break"
+      },
+      {
+        "answer": "text-wrap: force"
+      },
+      {
+        "answer": "word-wrap: break-word",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "css",
+      "medium"
+    ]
+  },
+  {
+    "id": "CSS010",
+    "question": "Quais são os 3 primeiros valores do text-shadow em ordem?",
+    "options": [
+      {
+        "answer": "vertical, blur, horizontal"
+      },
+      {
+        "answer": "horizontal, vertical, blur",
+        "correct": true
+      },
+      {
+        "answer": "vertical, horizontal, blur"
+      },
+      {
+        "answer": "blur, vertical, horizontal"
+      }
+    ],
+    "tags": [
+      "css",
+      "hard"
+    ]
+  }
+]

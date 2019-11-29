@@ -669,7 +669,7 @@
   {
     "id": "JS030",
     "question": "Considere as duas funções abaixo. Qual será o retorno?",
-    "snippet": "function foo1() {  return {\n    bar: \"hello\"\n  };\n} function foo2() {  return\n  {\n    bar: \"hello\"\n  };\n}\n",
+    "snippet": "function foo1() {\n  return {\n    bar: \"hello\"\n  };\n} function foo2() {\n  return\n  {\n    bar: \"hello\"\n  };\n}\n",
     "options": [
       {
         "answer": "{bar: \"hello\"} e undefined",
@@ -693,7 +693,7 @@
   {
     "id": "JS031",
     "question": "Qual será o resultado do código abaixo:",
-    "snippet": "console.log(1 +  \"2\" + \"2\"); console.log(1 +  +\"2\" + \"2\"); console.log(1 +  -\"1\" + \"2\"); console.log(+\"1\" +  \"1\" + \"2\"); console.log( \"A\" - \"B\" + \"2\"); console.log( \"A\" - \"B\" + 2);\n",
+    "snippet": "console.log(1 +  \"2\" + \"2\");\nconsole.log(1 +  +\"2\" + \"2\");\nconsole.log(1 +  -\"1\" + \"2\");\nconsole.log(+\"1\" +  \"1\" + \"2\");\nconsole.log(\"A\" - \"B\" + \"2\");\nconsole.log(\"A\" - \"B\" + 2);",
     "options": [
       {
         "answer": "\"122\", \"32\", \"02\", \"112\", \"NaN2\" e NaN",
@@ -717,7 +717,7 @@
   {
     "id": "JS032",
     "question": "Qual será o resultado do código abaixo:",
-    "snippet": "for (var i = 0; i < 5; i++) {  setTimeout(function() { console.log(i); }, i * 1000 );\n}\n",
+    "snippet": "for (var i = 0; i < 5; i++) {\n  setTimeout(function() { console.log(i); }, i * 1000 );\n}\n",
     "options": [
       {
         "answer": "5, 5, 5, 5, e 5",
@@ -787,7 +787,7 @@
   {
     "id": "JS035",
     "question": "Qual será o resultado do código abaixo?",
-    "snippet": "var y = 1; if (function F(){}) {  y += Typeof F;\n} console.log(y);\n",
+    "snippet": "var y = 1;\nif (function foo() {}) {\n  y += typeof foo;\n}\nconsole.log(y);",
     "options": [
       {
         "answer": "1undefined",
@@ -811,7 +811,7 @@
   {
     "id": "JS036",
     "question": "Qual será o resultado do código abaixo?",
-    "snippet": "var foo = function bar() {  return 7;\n}; typeof bar();\n",
+    "snippet": "var foo = function bar() {\n  return 7;\n}; typeof bar();\n",
     "options": [
       {
         "answer": "Reference Error",
@@ -876,6 +876,29 @@
     "tags": [
       "js",
       "easy"
+    ]
+  },
+  {
+    "id": "JS039",
+    "question": "Ao incluir um script de terceiro na sua página HTML, é correto afirmar que ele:",
+    "options": [
+      {
+        "answer": "Não consegue se comunicar com os Webworkers de sua página",
+        "correct": true
+      },
+      {
+        "answer": "Não possui acesso ao localStorage da sua página"
+      },
+      {
+        "answer": "Não possui acesso aos cookies de sua página"
+      },
+      {
+        "answer": "Todas as alternativas estão corretas"
+      }
+    ],
+    "tags": [
+      "js",
+      "medium"
     ]
   }
 ]
