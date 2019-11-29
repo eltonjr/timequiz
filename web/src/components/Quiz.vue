@@ -51,6 +51,7 @@ export default {
     return {
       currentQuestion: 0,
       question: '',
+      questions: [],
       score: 0,
       dueDate: moment().add(MAX_TIME, 'minutes').toDate(),
       startDate: new Date(),
