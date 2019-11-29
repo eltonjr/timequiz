@@ -1,6 +1,5 @@
 import router from '@/shared/router'
-
-// const data = [{ name: 'Aaa', score: 25, time: 125 }, { name: 'Bbb', score: 25, time: 135 }, { name: 'Ccc', score: 21, time: 120 }]
+import scoresFallback from '../../static/assets/scores-fallback.json'
 
 export default {
 
@@ -41,7 +40,7 @@ export default {
     }).catch(failure => {
       console.error('fails attempting get scores: ', failure)
       this.pending--
-      return []
+      return scoresFallback
     })
   },
 

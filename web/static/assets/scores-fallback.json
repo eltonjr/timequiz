@@ -1,0 +1,32 @@
+[
+  {
+    "email": "splinter@mail.com",
+    "name": "Mestre Splinter",
+    "score": 10,
+    "time": 10000
+  },
+  {
+    "email": "michelangelo@mail.com",
+    "name": "Michelangelo",
+    "score": 10,
+    "time": 12000
+  },
+  {
+    "email": "leonardo@mail.com",
+    "name": "Leonardo",
+    "score": 5,
+    "time": 3000
+  },
+  {
+    "email": "donatello@mail.com",
+    "name": "Donatello",
+    "score": 3,
+    "time": 7000
+  },
+  {
+    "email": "raphael@mail.com",
+    "name": "Raphael",
+    "score": 2,
+    "time": 3000
+  }
+]
