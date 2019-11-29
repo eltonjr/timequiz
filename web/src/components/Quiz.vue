@@ -49,12 +49,14 @@ export default {
       currentQuestion: 0,
       question: '',
       score: 0,
-      dueDate: moment().add(MAX_TIME, 'minutes'),
+      dueDate: moment().add(MAX_TIME, 'minutes').toDate(),
+      startDate: new Date(),
       remaining: '',
       interval: null
     }
   },
   mounted () {
+    this.setRemainingTime()
     this.interval = setInterval(this.setRemainingTime, 1000)
     this.loadQuestions()
   },
@@ -70,16 +72,33 @@ export default {
         this.score += 1
       }
       if (this.currentQuestion === this.questions.length - 1) {
-        let user = serviceForm.fillUserWithScore({score: this.score, time: this.remaining})
-        serviceScore.postScore(user)
+        this.finish()
         return
       }
       this.currentQuestion += 1
       this.question = this.questions[this.currentQuestion]
     },
     setRemainingTime () {
-      let r = moment.duration(this.dueDate.toDate() - new Date())
-      this.remaining = `${r.minutes()}:${r.seconds()}`
+      const r = moment.duration(this.dueDate - new Date())
+      this.remaining = `${this.padLeft(r.minutes())}:${this.padLeft(r.seconds())}`
+      if (Math.round(r.asSeconds()) === 0) {
+        this.finish()
+      }
+    },
+    finish (score, time) {
+      if (this.interval) {
+        clearInterval(this.interval)
+      }
+      const elapsed = moment.duration(new Date() - this.startDate).asSeconds()
+      const user = serviceForm.fillUserWithScore({ score: this.score, time: Math.round(elapsed) })
+      serviceScore.postScore(user)
+    },
+    padLeft (val) {
+      val = '' + val
+      if (val.length < 2) {
+        return '0' + val
+      }
+      return val
     }
   },
   destroyed () {
