@@ -9,8 +9,8 @@ export default {
     quiz.push(...fetchQuestions(questionsJs, 'hard', 1))
     quiz.push(...fetchQuestions(questionsJs, 'medium', 3))
     quiz.push(...fetchQuestions(questionsJs, 'easy', 2))
-    quiz.push(...fetchQuestions(questionsGeneral, 'hard', 1))
     quiz.push(...fetchQuestions(questionsGeneral, 'medium', 1))
+    quiz.push(...fetchQuestions(questionsGeneral, 'easy', 1))
     quiz.push(...fetchQuestions(questionsSec, '', 2))
     return quiz
   }
@@ -31,8 +31,25 @@ function fetchQuestions (questions, tag, amount) {
     let rand = Math.floor(Math.random() * filtered.length)
     let question = filtered[rand]
     filtered.splice(rand, 1)
+    question.options = shuffle(question.options)
     randomQuestions.push(question)
   }
 
   return randomQuestions
+}
+
+var shuffle = function (array) {
+  var currentIndex = array.length
+  var temporaryValue, randomIndex
+
+  while (currentIndex !== 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex)
+    currentIndex -= 1
+
+    temporaryValue = array[currentIndex]
+    array[currentIndex] = array[randomIndex]
+    array[randomIndex] = temporaryValue
+  }
+
+  return array
 }
