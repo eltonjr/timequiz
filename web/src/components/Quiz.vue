@@ -5,11 +5,14 @@
       <div class="column is-8 is-offset-2">
 
         <div class="remaining">
-          <!-- TODO progress -->
-          <!-- TODO current score -->
-          <!-- TODO timer -->
           {{remaining}}
         </div>
+
+        <div class="score">
+          ⭐ {{score}}
+        </div>
+
+        <div class="progress" :style="'width: ' + percent + '%;'"></div>
 
         <form>
           <div class="control question">
@@ -61,6 +64,9 @@ export default {
     this.loadQuestions()
   },
   computed: {
+    percent () {
+      return ((this.currentQuestion + 1) * 100) / this.questions.length
+    }
   },
   methods: {
     loadQuestions () {
@@ -115,6 +121,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/app.scss';
+
 .quiz{
   width: 100%;
   position: absolute;
@@ -126,7 +134,14 @@ export default {
     text-align: center;
     font-size: 4rem;
     font-weight: 400;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+  }
+
+  .score{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 10px;
   }
 
   .question{
@@ -135,6 +150,12 @@ export default {
 
   .radio{
     margin-bottom: 10px;
+  }
+
+  .progress{
+    background-color: $neo-orange-light;
+    height: 4px;
+    color: white;
   }
 }
 </style>
