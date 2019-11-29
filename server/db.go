@@ -11,10 +11,10 @@ import (
 )
 
 type Score struct {
-	Name  string
-	Email string
-	Score int
-	Time  int
+	Name  string `json:"name"`
+	Email string `json:"email"`
+	Score int    `json:"score"`
+	Time  int    `json:"time"`
 }
 
 const (
