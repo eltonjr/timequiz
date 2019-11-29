@@ -14,7 +14,7 @@
             <td>{{i+1}}</td>
             <td>{{item.name}}</td>
             <td>{{item.score}}</td>
-            <td>{{item.time}}</td>
+            <td>{{toMMSS(item.time)}}</td>
           </tr>
         </tbody>
       </table>
@@ -48,6 +48,20 @@ export default {
       this.pending--
       console.log('failed getting scores', failure)
     })
+  },
+  methods: {
+    padLeft (val) {
+      val = '' + val
+      if (val.length < 2) {
+        return '0' + val
+      }
+      return val
+    },
+    toMMSS (data) {
+      if (data) {
+        return this.padLeft(Math.floor(data / 60)) + ':' + this.padLeft(data % 60)
+      }
+    }
   },
   computed: {
   },
