@@ -99,6 +99,7 @@ export default {
       const elapsed = moment.duration(new Date() - this.startDate).asSeconds()
       const user = serviceForm.fillUserWithScore({ score: this.score, time: Math.round(elapsed) })
       serviceScore.postScore(user)
+      this.$router.push({ name: 'result' })
     },
     padLeft (val) {
       val = '' + val

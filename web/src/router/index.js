@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import ScoreboardList from '@/components/ScoreboardList.vue'
 import Form from '@/components/Form.vue'
 import Quiz from '@/components/Quiz.vue'
+import Result from '@/components/Result.vue'
 
 Vue.use(Router)
 
@@ -28,11 +29,11 @@ export default new Router({
       path: '/quiz',
       name: 'quiz',
       component: Quiz
-    // },
-    // {
-    //   path: '/final',
-    //   name: 'final',
-    //   component: Final
+    },
+    {
+      path: '/result',
+      name: 'result',
+      component: Result
     }
   ]
 })

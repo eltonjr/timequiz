@@ -6,9 +6,18 @@
         <span class="heading-primary__main">Quiz</span>
         <span class="heading-primary__sub">There is more to know</span>
       </h1>
+      <h1 class="heading-primary" v-if="user">
+        <span class="heading-primary__main">⭐</span>
+        <span class="heading-primary__main">{{user.score}}</span>
+        <span class="heading-primary__result">{{user.time}}s</span>
+      </h1>
 
       <div class="header__actions">
         <button v-if="showButton" @click="goToForm()" class="btn btn--white btn--animated">Começar</button>
+      </div>
+
+      <div class="header__actions">
+        <button v-if="user" @click="goToScore()" class="btn btn--white btn--animated">Finalizar</button>
       </div>
     </div>
   </section>
@@ -17,10 +26,13 @@
 <script>
 export default {
   name: 'PageHeader',
-  props: ['showButton', 'showTexts'],
+  props: ['showButton', 'showTexts', 'user'],
   methods: {
     goToForm () {
       this.$router.push({ name: 'form' })
+    },
+    goToScore () {
+      this.$router.push({ name: 'scores' })
     }
   }
 }
@@ -80,6 +92,14 @@ export default {
     font-weight: 700;
     letter-spacing: 1.3rem;
     animation: moveInRight 1s ease-out;
+  }
+
+  &__result {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    animation: moveInRight 1s ease-out;
+    text-transform: none;
   }
 }
 </style>
