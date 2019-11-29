@@ -20,7 +20,6 @@ export default {
   props: ['showButton', 'showTexts'],
   methods: {
     goToForm () {
-      console.log('asdasdsadas')
       this.$router.push({ name: 'form' })
     }
   }

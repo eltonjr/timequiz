@@ -15,14 +15,14 @@
         <div class="progress" :style="'width: ' + percent + '%;'"></div>
 
         <form>
-          <div class="control question">
+          <div class="control question mono">
             <p>{{question.question}}</p>
           </div>
           <div class="control" v-if="question.snippet">
-            <p>{{question.snippet}}</p>
+            <pre>{{question.snippet}}</pre>
           </div>
           <div class="control" v-for="(item, i) in question.options" :key="i" @click.stop.prevent="next(item)">
-            <label class="radio">
+            <label class="radio mono">
               <input type="radio" name="answer" :option="item.answer" :value="item.answer">
               {{item.answer}}
             </label>
@@ -51,6 +51,7 @@ export default {
     return {
       currentQuestion: 0,
       question: '',
+      questions: [],
       score: 0,
       dueDate: moment().add(MAX_TIME, 'minutes').toDate(),
       startDate: new Date(),
@@ -156,6 +157,16 @@ export default {
     background-color: $neo-orange-light;
     height: 4px;
     color: white;
+  }
+
+  .mono {
+    font-family: Consolas,monospace
+  }
+
+  pre {
+    background-color: rgba(221, 221, 221, 0.8);
+    border-radius: 10px;
+    margin-bottom: 10px;
   }
 }
 </style>
