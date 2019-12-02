@@ -3,8 +3,6 @@
 const missingName = 'Por favor, preencha o nome'
 const missingEmail = 'Por favor, preencha um email válido'
 
-const emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i
-
 module.exports = {
 
   ok: 'ok',
@@ -21,7 +19,7 @@ module.exports = {
       return missingName
     }
 
-    if (!payload.email || !emailRegex.test(payload.email)) {
+    if (!payload.email) {
       return missingEmail
     }
 

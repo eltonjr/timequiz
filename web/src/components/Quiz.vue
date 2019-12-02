@@ -128,7 +128,7 @@ export default {
 .quiz{
   width: 100%;
   position: absolute;
-  top: 20vh;
+  top: 10vh;
   color: white;
   font-weight: 600;
 

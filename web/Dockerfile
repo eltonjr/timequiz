@@ -4,6 +4,8 @@ FROM node:lts-alpine AS base
 WORKDIR /app
 
 COPY package*.json ./
+COPY nginx ./
+COPY docker-entrypoint.sh ./
 
 # ---- Deps ----
 FROM base AS dependencies
@@ -19,8 +21,8 @@ RUN npm run build
 # ---- Release ----
 FROM nginx:1.17-alpine AS release
 COPY --from=build /app/dist /var/www/webapp
-COPY nginx /etc/nginx/conf.d/template.conf
-COPY docker-entrypoint.sh /opt
+COPY --from=base /app/nginx /etc/nginx/conf.d/template.conf
+COPY --from=base /app/docker-entrypoint.sh /opt
 RUN chmod +x /opt/docker-entrypoint.sh
 
 EXPOSE 9090

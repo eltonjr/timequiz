@@ -1,16 +1,20 @@
 import questionsJs from '../../static/assets/questions-js.json'
 import questionsGeneral from '../../static/assets/questions-general.json'
 import questionsSec from '../../static/assets/questions-sec.json'
+import questionsCSS from '../../static/assets/questions-css-html.json'
 
 export default {
 
   loadQuestions () {
     let quiz = []
-    quiz.push(...fetchQuestions(questionsJs, 'hard', 1))
-    quiz.push(...fetchQuestions(questionsJs, 'medium', 3))
+    quiz.push(...fetchQuestions(questionsCSS, 'easy', 1))
+    quiz.push(...fetchQuestions(questionsCSS, 'medium', 2))
+    quiz.push(...fetchQuestions(questionsCSS, 'hard', 2))
     quiz.push(...fetchQuestions(questionsJs, 'easy', 2))
-    quiz.push(...fetchQuestions(questionsGeneral, 'medium', 1))
+    quiz.push(...fetchQuestions(questionsJs, 'medium', 3))
+    quiz.push(...fetchQuestions(questionsJs, 'hard', 1))
     quiz.push(...fetchQuestions(questionsGeneral, 'easy', 1))
+    quiz.push(...fetchQuestions(questionsGeneral, 'medium', 1))
     quiz.push(...fetchQuestions(questionsSec, '', 2))
     return quiz
   }

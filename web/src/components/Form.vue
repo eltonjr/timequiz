@@ -56,11 +56,11 @@ export default {
       this.$router.push({ name: 'scores' })
     },
     goToQuiz () {
-      // const validMsg = service.validateForm(this.form)
-      // if (validMsg !== service.ok) {
-      //   this.feedback = validMsg
-      //   return
-      // }
+      const validMsg = service.validateForm(this.form)
+      if (validMsg !== service.ok) {
+        this.feedback = validMsg
+        return
+      }
       service.fillUserWithForm(this.form)
       this.$router.push({ name: 'quiz' })
     }

@@ -41,7 +41,7 @@ export default {
 <style lang="scss">
 @import '../../helpers/styles/base.scss';
 .header {
-  height: 75vh;
+  height: 90vh;
   background-image: linear-gradient(
     to right bottom,
     rgba($primary, 0.8),
@@ -53,7 +53,7 @@ export default {
   background-position: top;
   position: relative;
 
-  clip-path: polygon(0 0, 100% 0, 100% 63vh,0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85vh,0 100%);
 
   &__form-box {
     position: absolute;
@@ -83,7 +83,7 @@ export default {
     font-weight: 400;
     letter-spacing: .5rem;
 
-    animation: moveInLeft 1s ease-out;
+    animation: moveInLeft 0.6s ease-out;
   }
 
   &__sub {
@@ -91,14 +91,14 @@ export default {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.3rem;
-    animation: moveInRight 1s ease-out;
+    animation: moveInRight 0.6s ease-out;
   }
 
   &__result {
     display: block;
     font-size: 2rem;
     font-weight: 400;
-    animation: moveInRight 1s ease-out;
+    animation: moveInRight 0.6s ease-out;
     text-transform: none;
   }
 }

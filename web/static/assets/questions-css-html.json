@@ -1,0 +1,485 @@
+[
+  {
+    "id": "CSS001",
+    "question": "Quando deseja-se aplicar um estilo diretamente na tag, esse tipo de inserção é chamado de:",
+    "options": [
+      {
+        "answer": "Inline",
+        "correct": true
+      },
+      {
+        "answer": "Incorporado"
+      },
+      {
+        "answer": "Intag"
+      },
+      {
+        "answer": "Off-tag"
+      }
+    ],
+    "tags": [
+      "css",
+      "easy"
+    ]
+  },
+  {
+    "id": "CSS002",
+    "question": "O que significa a sigla CSS:",
+    "options": [
+      {
+        "answer": "Computer Style Sheets"
+      },
+      {
+        "answer": "Colorful Style Sheets"
+      },
+      {
+        "answer": "Creative Style Sheets"
+      },
+      {
+        "answer": "Cascading Style Sheets",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "css",
+      "easy"
+    ]
+  },
+  {
+    "id": "CSS003",
+    "question": "Qual tipo de seletor é utilizado para chegar ao elemento adjacente do outro elemento?",
+    "options": [
+      {
+        "answer": ". (ponto)"
+      },
+      {
+        "answer": "> (maior)"
+      },
+      {
+        "answer": "+ (adição)",
+        "correct": true
+      },
+      {
+        "answer": "(espaço)"
+      }
+    ],
+    "tags": [
+      "css",
+      "medium"
+    ]
+  },
+  {
+    "id": "CSS004",
+    "question": "Supondo que todos os seletores designem o mesmo elemento, qual tem a maior prioridade de seleção?",
+    "options": [
+      {
+        "answer": "#page ul li a {}"
+      },
+      {
+        "answer": "#page .menu a {}",
+        "correct": true
+      },
+      {
+        "answer": "div.menu ul li a {}"
+      },
+      {
+        "answer": "div#page ul a {}"
+      }
+    ],
+    "tags": [
+      "css",
+      "hard"
+    ]
+  },
+  {
+    "id": "CSS005",
+    "question": "Qual das opções a seguir não é um valor da propriedade \"display\"?",
+    "options": [
+      {
+        "answer": "list-item"
+      },
+      {
+        "answer": "inline-block"
+      },
+      {
+        "answer": "table-legend",
+        "correct": true
+      },
+      {
+        "answer": "inline-table"
+      }
+    ],
+    "tags": [
+      "css",
+      "medium"
+    ]
+  },
+  {
+    "id": "CSS006",
+    "question": "Sobre o posicionamento relativo no css (position: relative)",
+    "options": [
+      {
+        "answer": "Permitir posicionar um elemento em relação a outro elemento, tomado como referência"
+      },
+      {
+        "answer": "Permitir posicionar um elemento em relação aos limites do seu elemento pai"
+      },
+      {
+        "answer": "Permite deslocar um elemento A em relação à sua posição \"normal\", no fluxo",
+        "correct": true
+      },
+      {
+        "answer": "Permite aplicar a teoria da relatividade geral E a teoria da relatividade restrita a um layout"
+      }
+    ],
+    "tags": [
+      "css",
+      "hard"
+    ]
+  },
+  {
+    "id": "CSS007",
+    "question": "Onde um elemento posicionado em absoluto (position: absolute) será posicionado à esquerda: 100px?",
+    "options": [
+      {
+        "answer": "100px a partir da borda esquerda da janela do navegador"
+      },
+      {
+        "answer": "A 100px da borda esquerda do elemento html"
+      },
+      {
+        "answer": "A 100px da borda esquerda do elemento body"
+      },
+      {
+        "answer": "A 100px da borda esquerda de seu ancestral mais próximo posicionado",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "css",
+      "medium"
+    ]
+  },
+  {
+    "id": "CSS008",
+    "question": "Após uma imagem flutuante à direita (float: right;), coloque um título h2. Como ter certeza que será colocado abaixo da imagem flutuante?",
+    "options": [
+      {
+        "answer": "img {clear: left;}"
+      },
+      {
+        "answer": "img {clear: right;}"
+      },
+      {
+        "answer": "h2 {clear: left;}"
+      },
+      {
+        "answer": "h2 {clear: right;}",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "css",
+      "medium"
+    ]
+  },
+  {
+    "id": "CSS009",
+    "question": "Como forçar uma quebra de linha usando CSS3?",
+    "options": [
+      {
+        "answer": "text-wrap: break"
+      },
+      {
+        "answer": "word-wrap: break"
+      },
+      {
+        "answer": "text-wrap: force"
+      },
+      {
+        "answer": "word-wrap: break-word",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "css",
+      "medium"
+    ]
+  },
+  {
+    "id": "CSS010",
+    "question": "Quais são os 3 primeiros valores do text-shadow em ordem?",
+    "options": [
+      {
+        "answer": "vertical, blur, horizontal"
+      },
+      {
+        "answer": "horizontal, vertical, blur",
+        "correct": true
+      },
+      {
+        "answer": "vertical, horizontal, blur"
+      },
+      {
+        "answer": "blur, vertical, horizontal"
+      }
+    ],
+    "tags": [
+      "css",
+      "hard"
+    ]
+  },
+  {
+    "id": "HTML001",
+    "question": "A W3C é:",
+    "options": [
+      {
+        "answer": "Um órgão privado que surgiu com o intuito de padronizar a web e se beneficiar através desses padrões utilizados."
+      },
+      {
+        "answer": "É um consórcio de empresas, órgãos e organizações e é a principal referência de padronização da web.",
+        "correct": true
+      },
+      {
+        "answer": "É um consórcio que tem por objetivo padronizar código e convenções apenas de HTML, CSS e JS."
+      },
+      {
+        "answer": "É um consórcio que padroniza diversas frentes da web, mas deixa de lado a acessibilidade"
+      }
+    ],
+    "tags": [
+      "html",
+      "medium"
+    ]
+  },
+  {
+    "id": "HTML002",
+    "question": "Se tratando de imagens responsivas, no caso a seguir: <img srcset=\"img/logo-1x.png 1x, img/logo-2x.png 2x\" alt=\"logo\">. Estamos usando uma técnica onde o browser identifica:",
+    "options": [
+      {
+        "answer": "@media configurado com 1x"
+      },
+      {
+        "answer": "Tamanho da dela"
+      },
+      {
+        "answer": "Resolução da tela",
+        "correct": true
+      },
+      {
+        "answer": "O link de download da imagem"
+      }
+    ],
+    "tags": [
+      "html",
+      "hard"
+    ]
+  },
+  {
+    "id": "HTML003",
+    "question": "Qual o comportamento do atributo defer em uma tag <script>?",
+    "options": [
+      {
+        "answer": "Impede de transferir o script enquanto o DOM não estiver montado"
+      },
+      {
+        "answer": "Transfere o script enquanto o DOM é carregado, mas executa o script antes de concluir o carregamento"
+      },
+      {
+        "answer": "Transfere o script enquanto o DOM ainda está sendo carregado, mas aguarda até que o documento termine de carregar antes de executá-lo",
+        "correct": true
+      },
+      {
+        "answer": "Transfere o script antes do DOM começar a ser montado"
+      }
+    ],
+    "tags": [
+      "html",
+      "hard"
+    ]
+  },
+  {
+    "id": "HTML004",
+    "question": "O elemento <canvas> é apenas um ____________ para os gráficos.",
+    "options": [
+      {
+        "answer": "componente"
+      },
+      {
+        "answer": "container"
+      },
+      {
+        "answer": "atributo",
+        "correct": true
+      },
+      {
+        "answer": "método"
+      }
+    ],
+    "tags": [
+      "html",
+      "easy"
+    ]
+  },
+  {
+    "id": "HTML006",
+    "question": "Se a imagem de fundo for menor que a tela, o que acontecerá?",
+    "options": [
+      {
+        "answer": "Ficará esticada"
+      },
+      {
+        "answer": "Ocupa automaticamente 100% da tela"
+      },
+      {
+        "answer": "Se repetirá",
+        "correct": true
+      },
+      {
+        "answer": "Deixa espaço em branco na parte inferior da página"
+      }
+    ],
+    "tags": [
+      "html",
+      "easy"
+    ]
+  },
+  {
+    "id": "HTML007",
+    "question": "Qual das opções abaixo não é verdadeira sobre o elemento do article?",
+    "options": [
+      {
+        "answer": "Texto ou conteúdo incorporado"
+      },
+      {
+        "answer": "As tags inicial e final são necessárias"
+      },
+      {
+        "answer": "Pode ser usado para fornecer informações ao autor"
+      },
+      {
+        "answer": "O atributo contenteditable não pode ser usado com o elemento article",
+        "correct": true
+      }
+    ],
+    "tags": [
+      "html",
+      "medium"
+    ]
+  },
+  {
+    "id": "HTML008",
+    "question": "Qual atributo reproduzirá o áudio incorporado no elemento de áudio continuamente?",
+    "options": [
+      {
+        "answer": "preload"
+      },
+      {
+        "answer": "control"
+      },
+      {
+        "answer": "loop",
+        "correct": true
+      },
+      {
+        "answer": "autoplay"
+      }
+    ],
+    "tags": [
+      "html",
+      "medium"
+    ]
+  },
+  {
+    "id": "HTML009",
+    "question": "Onde o atributo 'rel=noopener' é usado?",
+    "options": [
+      {
+        "answer": "<script>"
+      },
+      {
+        "answer": "<header>"
+      },
+      {
+        "answer": "<a>",
+        "correct": true
+      },
+      {
+        "answer": "<body>"
+      }
+    ],
+    "tags": [
+      "html",
+      "hard"
+    ]
+  },
+  {
+    "id": "HTML010",
+    "question": "Principal atuação do atributo alt nas imagens:",
+    "options": [
+      {
+        "answer": "Na acessibilidade e no SEO"
+      },
+      {
+        "answer": "No SEO"
+      },
+      {
+        "answer": "Na acessibilidade",
+        "correct": true
+      },
+      {
+        "answer": "Mostrar o valor do alt quando passa o mouse em cima da imagem"
+      }
+    ],
+    "tags": [
+      "html",
+      "easy"
+    ]
+  },
+  {
+    "id": "HTML011",
+    "question": "Quais são os principais benefícios do HTML5?",
+    "options": [
+      {
+        "answer": "Facilidade para mecanismos de SEOs, facilidade de estilização do layout e acessibilidade"
+      },
+      {
+        "answer": "Ajuda no reconhecimento de informações para indexação por robôs de busca, acessibilidade e semântica"
+      },
+      {
+        "answer": "Possibilitou dinâmica nos elementos, acessibilidade e semântica",
+        "correct": true
+      },
+      {
+        "answer": "Muito mais segurança, acessibilidade e semântica"
+      }
+    ],
+    "tags": [
+      "html",
+      "medium"
+    ]
+  },
+  {
+    "id": "HTML012",
+    "question": "Qual é o doctype de um documento HTML5?",
+    "options": [
+      {
+        "answer": "<!DOCTYPE html5.1>"
+      },
+      {
+        "answer": "<!DOCTYPE html>"
+      },
+      {
+        "answer": "<!DOCTYPE html5>",
+        "correct": true
+      },
+      {
+        "answer": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML5.0 Strict//EN\">"
+      }
+    ],
+    "tags": [
+      "html",
+      "medium"
+    ]
+  }
+]
